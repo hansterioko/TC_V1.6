@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".controllers.CreateShopActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:navigationIcon="?attr/homeAsUpIndicator"
+        android:layout_marginBottom="50dp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/titleContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:counterMaxLength="30"
+        app:counterEnabled="true"
+        app:errorEnabled="true"
+        app:helperText="Необходимо ввести"
+        app:helperTextTextColor="@color/design_default_color_error">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/titleText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:ems="10"
+            android:textColor="#FFFF"
+            android:minHeight="48dp"
+            android:inputType="text"
+            android:maxLength="40"
+            android:hint="Наименование"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/cityContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:counterMaxLength="40"
+        app:counterEnabled="true"
+        app:errorEnabled="true"
+        app:helperText="Необходимо ввести"
+        app:helperTextTextColor="@color/design_default_color_error">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/cityText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:ems="10"
+            android:textColor="#FFFF"
+            android:minHeight="48dp"
+            android:inputType="text"
+            android:maxLength="40"
+            android:hint="Город"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/streetContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:counterMaxLength="40"
+        app:counterEnabled="true"
+        app:errorEnabled="true"
+        app:helperText="Необходимо ввести"
+        app:helperTextTextColor="@color/design_default_color_error">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/streetText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:ems="10"
+            android:textColor="#FFFF"
+            android:minHeight="48dp"
+            android:inputType="text"
+            android:maxLength="40"
+            android:hint="Улица"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/houseContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:counterMaxLength="40"
+        app:counterEnabled="true"
+        app:errorEnabled="true"
+        app:helperText="Необходимо ввести"
+        app:helperTextTextColor="@color/design_default_color_error">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/houseText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:ems="10"
+            android:textColor="#FFFF"
+            android:minHeight="48dp"
+            android:inputType="text"
+            android:maxLength="40"
+            android:hint="Дом"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/addNewShopBtn"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="85dp"
+        android:layout_marginBottom="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Добавить" />
+
+</LinearLayout>

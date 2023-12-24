@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".controllers.CreateShipmentActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#4CD6E6"
+        android:orientation="vertical">
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:background="?attr/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            app:navigationIcon="?attr/homeAsUpIndicator" />
+
+        <Button
+            android:id="@+id/selectShipmentDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#ED8D00"
+            android:layout_marginVertical="10dp"
+            android:layout_marginHorizontal="10dp"
+            android:textSize="18sp"
+            android:text="Выберите дату" />
+
+        <TextView
+            android:id="@+id/discountShipmentText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:layout_marginHorizontal="25dp"
+            android:textSize="18sp"
+            android:textColor="#D37D01"
+            android:textStyle="bold"
+            android:text="Скидки нету" />
+
+        <SeekBar
+            android:id="@+id/seekBarDiscount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="99"
+            android:min="0"
+            android:progress="0"
+            android:layout_marginVertical="10dp"
+            android:layout_marginHorizontal="10dp"/>
+
+        <TextView
+            android:id="@+id/selectCompanyLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#FFFF"
+            android:gravity="center"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="20dp"
+            android:text="@string/selectProductLabel" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/productSelectList"
+            android:layout_width="match_parent"
+            android:layout_height="432dp">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <Button
+            android:id="@+id/addShipmentBtn"
+            android:layout_width="match_parent"
+            android:layout_height="66dp"
+            android:backgroundTint="#EC8C00"
+            android:layout_marginVertical="10dp"
+            android:layout_marginHorizontal="10dp"
+            android:text="@string/addShipmentBtn"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

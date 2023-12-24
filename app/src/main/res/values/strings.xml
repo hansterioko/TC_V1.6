@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">TC_V1.6</string>
+
+    // Server
+    <string name="server">http://192.168.0.53:8080</string>
+    <!--    <string name="server">http://192.168.184.214:8080</string>-->
+
+    <string name="mainLabel">Торговая фирма</string>
+    <string name="mainPurchase">Закупки</string>
+    <string name="mainWarehouse">Склад</string>
+    <string name="mainShipment">Поставки</string>
+    <string name="backBtn">Назад</string>
+    <string name="addPurchaseBtn">Добавить закупку</string>
+    <string name="listPurchaseLabel">Список закупок</string>
+    <string name="detailBtn">Подробнее</string>
+    <string name="deletePurchaseBtn">Удалить закупку</string>
+    <string name="productListInPurchase">Список товаров в закупке</string>
+    <string name="selectCompanyLabel">Выберите компанию</string>
+    <string name="selectBtn">Выбрать</string>
+    <string name="selectProductLabel">Выберите товары</string>
+    <string name="addPurchaseInSelectProductBtn">Добавить закупку</string>
+    <string name="addNewProduct">Добавить товар</string>
+    <string name="addProductPhoto">Добавить фото</string>
+    <string name="deleteProductBtn">Удалить товар</string>
+    <string name="mainCompanyBtn">Компании</string>
+    <string name="mainShopBtn">Магазины</string>
+    <string name="addCompanyBtn">Добавить компанию</string>
+    <string name="deleteCompanyBtn">Удалить компанию</string>
+    <string name="addShopBtn">Добавить магазин</string>
+    <string name="deleteShopBtn">Удалить магазин</string>
+    <string name="shipmentsLabel">Список поставок</string>
+    <string name="addShipmentBtn">Добавить поставку</string>
+    <string name="deleteShipmentBtn">Удалить поставку</string>
+    <string name="detailShipmentLabel">Список товаров в поставке</string>
+    <string name="selectShopLabel">Выберите магазин</string>
+</resources>

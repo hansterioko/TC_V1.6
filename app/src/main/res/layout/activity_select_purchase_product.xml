@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".controllers.SelectPurchaseProductActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#4CD6E6"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:background="?attr/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            app:navigationIcon="?attr/homeAsUpIndicator" />
+
+        <Button
+            android:id="@+id/selectPurchaseDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="10dp"
+            android:backgroundTint="#ED8D00"
+            android:text="Выберите дату"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/datePurchaseText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="25dp"
+            android:gravity="end"
+            android:text="Дата не выбрана"
+            android:textColor="#D37D01"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/selectCompanyLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:text="@string/selectProductLabel"
+            android:textColor="#FFFF"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/productSelectList"
+            android:layout_width="match_parent"
+            android:layout_height="432dp">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <Button
+            android:id="@+id/addPurchaseBtn"
+            android:layout_width="match_parent"
+            android:layout_height="66dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#EC8C00"
+            android:text="@string/addPurchaseInSelectProductBtn"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4CD6E6"
+    tools:context=".controllers.CreateProductActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:background="?attr/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            app:navigationIcon="?attr/homeAsUpIndicator" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/view2"
+            android:layout_width="350dp"
+            android:layout_height="230dp"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:elevation="12dp"
+            android:innerRadius="0dp"
+            android:shape="ring"
+            android:thicknessRatio="1.9"
+            app:cardCornerRadius="40dp">
+
+            <ImageView
+                android:id="@+id/productView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+
+                android:scaleType="centerCrop"></ImageView>
+        </androidx.cardview.widget.CardView>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/titleContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:counterMaxLength="30"
+            app:counterEnabled="true"
+            app:errorEnabled="true"
+            app:helperText="Необходимо ввести"
+            app:helperTextTextColor="@color/design_default_color_error">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/titleText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:ems="10"
+                android:textColor="#FFFF"
+                android:minHeight="48dp"
+                android:inputType="text"
+                android:maxLength="40"
+                android:hint="Наименование"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/descContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:counterMaxLength="40"
+            app:counterEnabled="true"
+            app:errorEnabled="true"
+            app:helperText="Необходимо ввести"
+            app:helperTextTextColor="@color/design_default_color_error">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/descText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:ems="10"
+                android:textColor="#FFFF"
+                android:minHeight="48dp"
+                android:inputType="text"
+                android:maxLength="40"
+                android:hint="Описание"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/unitContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:counterMaxLength="40"
+            app:counterEnabled="true"
+            app:errorEnabled="true"
+            app:helperText="Необходимо ввести"
+            app:helperTextTextColor="@color/design_default_color_error">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/unitText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:ems="10"
+                android:textColor="#FFFF"
+                android:minHeight="48dp"
+                android:inputType="text"
+                android:maxLength="40"
+                android:hint="Единица измерения"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/categoryContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:counterMaxLength="40"
+            app:counterEnabled="true"
+            app:errorEnabled="true"
+            app:helperText="Необходимо ввести"
+            app:helperTextTextColor="@color/design_default_color_error">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/categoryText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:ems="10"
+                android:textColor="#FFFF"
+                android:minHeight="48dp"
+                android:inputType="text"
+                android:maxLength="30"
+                android:hint="категория"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/vatContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:counterMaxLength="2"
+            app:counterEnabled="true"
+            app:errorEnabled="true"
+            app:helperText="Необходимо ввести"
+            app:helperTextTextColor="@color/design_default_color_error">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/vatText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:ems="10"
+                android:textColor="#FFFF"
+                android:minHeight="48dp"
+                android:inputType="number"
+                android:maxLength="40"
+                android:hint="НДС"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/priceContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:counterMaxLength="10"
+            app:counterEnabled="true"
+            app:errorEnabled="true"
+            app:helperText="Необходимо ввести"
+            app:helperTextTextColor="@color/design_default_color_error">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/priceText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:ems="10"
+                android:textColor="#FFFF"
+                android:minHeight="48dp"
+                android:inputType="number"
+                android:maxLength="40"
+                android:hint="Цена закупки"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/selectCompanyText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:textColor="#FFFF"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="@string/selectCompanyLabel" />
+
+        <Spinner
+            android:id="@+id/spinnerCompany"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:backgroundTint="#FFFF"
+            tools:listitem="@android:layout/simple_spinner_dropdown_item"
+            android:layout_margin="10dp"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/addPhotoButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:backgroundTint="#ED8D00"
+            android:text="@string/addProductPhoto" />
+
+        <Button
+            android:id="@+id/addNewProductBtn"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginBottom="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Добавить" />
+
+    </LinearLayout>
+
+
+</androidx.core.widget.NestedScrollView>

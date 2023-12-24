@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4CD6E6"
+    android:orientation="vertical"
+    tools:context=".controllers.MainActivity">
+
+    <TextView
+        android:id="@+id/mainLabel"
+        android:layout_width="match_parent"
+        android:layout_height="94dp"
+        android:layout_marginTop="15dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/mainLabel"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/purchaseBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginVertical="20dp"
+        android:layout_weight="1"
+        android:backgroundTint="#ED8D00"
+        android:drawableLeft="@drawable/icon_purchase_main"
+        android:text="@string/mainPurchase"
+        android:textSize="26sp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/warehouseBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginVertical="20dp"
+        android:layout_weight="1"
+        android:backgroundTint="#ED8D00"
+        android:drawableLeft="@drawable/icon_warehouse_main"
+        android:text="@string/mainWarehouse"
+        android:textSize="26sp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/shipmentBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="120dp"
+        android:layout_weight="1"
+        android:backgroundTint="#ED8D00"
+        android:drawableLeft="@drawable/icon_shipment_main"
+        android:text="@string/mainShipment"
+        android:textSize="26sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginVertical="10dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/skipToCompaniesBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="20dp"
+            android:text="@string/mainCompanyBtn" />
+
+        <Button
+            android:id="@+id/skipToShopsBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_weight="1"
+            android:text="@string/mainShopBtn" />
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4CD6E6"
+    tools:context=".controllers.PurchaseActivity">
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:paddingVertical="5dp"
+        android:background="@drawable/gradient_purchase_activity"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="0dp"
+        tools:ignore="MissingConstraints">
+
+        <Button
+            android:id="@+id/backPurchaseBtn"
+            android:layout_width="152dp"
+            android:layout_marginLeft="20dp"
+            android:layout_height="90dp"
+            android:backgroundTint="#ED8D00"
+            android:textSize="20sp"
+            android:text="@string/backBtn" />
+
+        <Button
+            android:id="@+id/createPurchaseBtn"
+            android:layout_width="152dp"
+            android:layout_height="90dp"
+            android:textSize="20sp"
+            android:layout_marginLeft="230dp"
+            android:backgroundTint="#ED8D00"
+            android:text="@string/addPurchaseBtn" />
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bottomNavigationView">
+
+        <TextView
+            android:id="@+id/purchaseLabel"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:textSize="26dp"
+            android:drawableLeft="@drawable/icon_pointer_down"
+            android:drawableRight="@drawable/icon_pointer_down"
+            android:textColor="#FFFF"
+            android:textStyle="bold"
+            android:gravity="center"
+
+            android:text="@string/listPurchaseLabel" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/purchaseList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
